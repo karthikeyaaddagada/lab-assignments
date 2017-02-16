@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="Bsignupbutton" type="id">10</item>
+    <item name="TFname" type="id">10</item>
+    <item name="TFemail" type="id">10</item>
+    <item name="TFuname" type="id">10</item>
+    <item name="TFpass1" type="id">10</item>
+    <item name="TFpass2" type="id">10</item>
+</resources>
