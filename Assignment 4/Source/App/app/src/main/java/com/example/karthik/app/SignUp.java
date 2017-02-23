@@ -10,7 +10,7 @@ import android.widget.Toast;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-
+*
 public class SignUp extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
