@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
             try {
                 VrVideoView.Options options = new VrVideoView.Options();
                 options.inputType = VrVideoView.Options.TYPE_MONO;
-                mVrVideoView.loadVideoFromAsset("cryptvideo.mp4",options);
+                mVrVideoView.loadVideoFromAsset("ntr.mp4",options);
             } catch( IOException e ) {
                 //Handle exception
             }
