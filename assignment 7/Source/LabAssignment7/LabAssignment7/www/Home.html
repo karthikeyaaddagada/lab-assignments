@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="" >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css">
+    <link rel="stylesheet" href="Welcome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+<style>
+.navbar{
+    background: url("edo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+body{
+    background: url('colors.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar-brand{
+    color:white;
+    padding-left:40%;
+    font-family: Microsoft sans-serif;
+    font-size:35px;
+}
+#logout{
+    color: white;
+    padding-left: 36%;
+    font-family: Micro;
+    padding-top: 1.5%;
+    font-family: Microsoft sans-serif;
+    font-size:15px;
+}
+.glyphicon-off{
+    font-size:13px;
+}
+.row{
+    width:60%;
+    margin-left:13%;
+    margin-top:5%;
+}
+.apiClass{
+    margin-top:10px;
+}
+.btn{
+    font-size:10px;
+    font-family:"Microsoft Sans Serif";
+}
+#faceDetection,#textToSpeech,#barCodeScanner{
+    padding:5px;
+    background:#94b7f3
+}
+#spanFaceDetectionHeading,#spanTextToSpeechHeading,#spanBarCodeHeading{
+    font-weight:bold;
+    font-size:20px;
+}
+.intro{
+    font-size:14px
+}
+#speechToTextLogo,#emotionLogo{
+    height:75px;
+    width:75px;
+}
+#welcomeIcon{
+      height:60px;
+    width:60px;
+    float:left;
+    margin-left:50px;
+    margin-top:5px;
+}
+img#welcomeIconImage {
+    margin-top: -327px;
+    margin-left: 900px;
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-light bg-faded">
+    <img id="welcomeIcon" src="just.jpeg">
+    <h1 class="navbar-brand m-b-0">Welcome
+    </h1>
+    <a href="LoginPage.html" class="btn btn-link" id="logout">Logout
+        <span >
+                <i class="glyphicon glyphicon-off"></i>
+            </span></a>
+</nav>
+<div class="row">
+<div class="col-md-12">
+    <div class="apiClass">
+        <span id="spanFaceDetectionHeading">Emotion Analysis</span>
+        <img src="https://s3.amazonaws.com/kairos-media/icons/facial-expression-detection.png" id="emotionLogo">
+        <p class="intro">
+            Emotion analysis (sometimes known as opinion mining or emotion AI) refers to the use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information.
+        </p>
+        <button type="submit" class="btn btn-primary" id="faceDetection" onclick="location.href='EmotionAnalysisUsingKairosApi.html'" class="btn btn-primary">Emotion Analysis</button>
+    </div>
+    <div class="apiClass">
+        <span id="spanTextToSpeechHeading">Speech to Text</span>
+        
+    <img src="img/SpeechToTextBackground.png" id="speechToTextLogo">
+        <p class="intro">
+           A simple to use app for dictating text which can be sent as an SMS or Email or copied and pasted into another app. The app uses Androids built-in Speech Recogniser to turn speech into text. The app is also capable of speaking text out using your built-in TTS Engine.
+ </p>
+        <button type="submit" class="btn btn-primary" id="textToSpeech" onclick="location.href='SpeechToText.html'" class="btn btn-primary">Speech to Text</button>
+    
+    </div>
+    </div>
+    <img id="Welcome1.jpg">
+</div>
+</body>
+</html>
